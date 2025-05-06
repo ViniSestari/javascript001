@@ -8,3 +8,5 @@ Vamos estudar
 - estrutura de reptição
 - vetor
 - interação com o DOM
+
+Vinicius Sestari
