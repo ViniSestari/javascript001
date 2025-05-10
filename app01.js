@@ -51,17 +51,109 @@ console.log(10<=10) //menor ou igual
 console.log(150>=175) //maior ou igual
 
 //     Operadores lógicos(&&, ||, !)
-console.log(!10>2) // não - inverte o resultado, se for true vira false e vice versa
+console.log(!10>2) // não - inverte o resultado, se for verdadeiro muda pra falso, se for falso muda pra verdadeiro
 console.log(!false)
+console.log(10>2 && 35<100 && n1>n2 && 100<90) // E - todas as verificações precisam ser verdadeiras para o resultado ser verdadeiro.
+console.log(10<2 || 100==150 || 57==57) // OU - apenas uma verificação precisa ser verdadeira para o resultado ser verdadeiro, o resultado só será falso quando TODAS as verificações forem falsas.
+
+//DESAFIO
+let preco = 100
+let precoAcrescimo = 0
+let precoDesconto = 0
+//faça um código que acrescente 17% ao preço e imprima
+precoAcrescimo = preco + preco *0.17
+console.log("Preço com acrescimo: " + precoAcrescimo.toFixed(2))
+//faça um código que desconte 7% do preço e imprima
+precoDesconto = preco - preco *0.07
+console.log("Preço com desconto: " + precoDesconto.toFixed(2))
 
 
 // Estrutura
 //     Estrutura de controle/decisão
-//     Laços de repetição
+if(10>5){
+    console.log("10 é maior que 5")
+}else{
+    console.log("10 não é maior que 100")
+}
+ 
+let idadeDoCandidato = 17
+if (idadeDoCandidato >= 18){
+    console.log("pode dirigir")
+}else{
+    console.log("volte mais tarde")
+}
+ 
+let salarioFunc = 3000
+//DESAFIO
+//faça um código que verifique se o salário do funcionario é maior que 500, se for mostre a mensagem "salário OK" se não mostre a mensagem "Precisa de um aumento de x reais"
+if (salarioFunc > 500){
+    console.log("Salário OK")
+}else{
+    console.log("Precisa de aumento")
+}      
+ 
+if (salarioFunc > 5000){
+    console.log("Salário OK")  
+}else{
+    console.log("precisa de aumento de " + (5000 - salarioFunc) +" reais")
+}
+ 
 
-// Arrays 
+//     Laços de repetição
+// quero mostrar 10 vezes a mensagem "Senac Americana"
+let controle = 0
+while (controle <= 10){
+    console.log("Senac Americana")
+    controle = controle + 1
+}
+
+controle = 1  // definição da variável de controle
+while(controle <=100){ // condição
+    console.log(controle)
+    controle = controle + 2 // incremento
+
+}
+
+//mostrar 10 vezes "senac americana"
+for(let i=1; i<=10; i=i+1){
+console.log("Senac Americana")
+}
+
+for (let i=1; i<=50; i=i+1){
+    console.log(i)
+}
+
+// Arrays --> vetor
+let alunos = ["joão", "Paulo", "Renata", "cris", "X" ]
+console.log(alunos)
+console.log(alunos[2])
+alunos[4] = "Kleber"
+console.log(alunos)
+alunos.push("Karem")
+console.log(alunos)
+
+let frutas = []
+console.log(frutas)
+frutas.push("🍓")
+frutas.push("🍌")
+frutas.push("🍍")
+frutas.push("🍊")
+frutas.push("🍏")
+frutas.push("🍉")
+frutas.push("🍑")
+frutas.push("🥝")
+frutas.push("🍇")
+frutas.push("🍒")
+console.log(frutas)
 
 // Funções básicas
+function soma (num1, num2){
+let total = num1 + num2
+console.log("O resultado é " + total)
+}
+soma(100, 14)
+soma(7, 3)
+
 // Escopo
 
 
